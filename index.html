@@ -1,0 +1,65 @@
+<html>
+
+<head>
+ <link rel="stylesheet" href="css/all.min.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <link rel="stylesheet" href="css/index_style.css">
+ <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+
+
+    
+    <div class="container py-5">
+
+        <label>productName :</label>
+        <input type="text" id="productNameInput" class="my-2 form-control">
+
+        <label>productPrice :</label>
+        <input type="number" id="productPriceInput" class="my-2 form-control">
+
+        <label>productCategory :</label>
+        <input type="text" id="productCategoryInput" class="my-2 form-control">
+
+        <label>productDesc :</label>
+        <textarea id="productDescInput" class="my-2 form-control"></textarea>
+
+        <button id="addBtn" class="btn btn-info">add</button>
+
+    </div>
+
+    <div class="container mt-5">
+
+        <div class="w-50 py-5 m-auto">
+            
+            <input onkeyup="searchProducts(this.value)" placeholder="search by product name..." class="form-control"> 
+            <div id="searchResults" class="w-100 p-3"></div>
+
+        </div>
+
+
+        <table class="table text-center">
+            <thead>
+                <th>index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDesc</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead>
+
+            <tbody id="tableBody"></tbody>
+        </table>
+        
+    </div>
+     
+    
+       
+
+
+    <script src="first.js"></script>
+</body>
+</html>
